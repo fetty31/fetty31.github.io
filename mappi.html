@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MaPPI — Fetty's Portfolio</title>
+    <meta name="description" content="MaPPI: Lightweight Model Predictive Path Integral controller for autonomous navigation." />
+    <meta name="author" content="Oriol Martínez">
+
+    <meta property="og:title" content="MaPPI — Fetty's Portfolio"/>
+    <meta property="og:description" content="MaPPI: Lightweight Model Predictive Path Integral controller for autonomous navigation."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://fetty31.github.io/images/preview.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="MaPPI — Fetty's Portfolio"/>
+    <meta name="twitter:description" content="MaPPI: Lightweight Model Predictive Path Integral controller for autonomous navigation."/>
+    <meta name="twitter:image" content="https://fetty31.github.io/images/preview.png"/>
+    <meta name="twitter:image:alt" content="MaPPI Project"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        /* Hero section for project pages */
+        .project-hero {
+            padding: 8rem 0 6rem 0; /* more bottom padding for spacing */
+            text-align: center;
+            min-height: auto;
+            color: #fff;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.8rem, 4vw, 4.5rem);
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-hero p {
+            font-size: 1.8rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .btn--primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Project content */
+        .project-content {
+            max-width: 900px;
+            margin: 4rem auto;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .project-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-content ul {
+            margin-left: 1.5rem;
+            color: #fff;
+        }
+
+        pre code {
+            background-color: #111;
+            color: #fff;
+            padding: 0.5rem;
+            display: block;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #00f;
+        }
+    </style>
+</head>
+<body id="top">
+    <div id="preloader"><div class="spinner" id="spinner"></div></div>
+
+    <header class="s-header">
+        <div class="header-logo"><a href="index.html">
+            <!-- SVG omitted for brevity -->
+        </a></div>
+        <div class="header-content">
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="index.html#projects" title="Portfolio">Portfolio</a></li>
+                    <li><a href="mailto:fetty3113@gmail.com" title="Contact Me">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="doc/cv.pdf" download="Oriol_Martinez_CV.pdf" class="btn btn--stroke btn--small">Download CV</a>
+        </div>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <section class="project-hero">
+        <div class="row">
+            <div class="column large-full">
+                <h1>MaPPI</h1>
+                <p>
+                    Lightweight Model Predictive Path Integral controller for autonomous navigation.
+                    MaPPI is designed for real-time obstacle avoidance, smooth trajectory generation,
+                    and supports kinematic bicycle models for vehicle-like robots.
+                </p>
+                <a href="https://github.com/fetty31/mappi" target="_blank" class="btn btn--primary" style="margin-top:2rem;">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-content">
+        <h2>Overview</h2>
+        <p>
+            MaPPI implements a lightweight MPPI controller for autonomous robots, enabling
+            kinematically feasible path planning and trajectory following. Unlike the Nav2 MPPI controller,
+            MaPPI directly supports vehicle-like robots through a kinematic bicycle model and provides
+            a standalone C++ library for use outside ROS.
+        </p>
+
+        <h2>Distinctive Features</h2>
+        <ul>
+            <li>Kinematic Bicycle Model: suitable for car-like robots (steering + velocity).</li>
+            <li>Standalone C++ library: portable, works independently of ROS.</li>
+            <li>ROS Noetic support: C++ plugin for ROS 1 `move_base` via `nav_core::BaseLocalPlanner`.</li>
+            <li>MotionModel-based trajectory generation ensures realistic robot motion compliance.</li>
+        </ul>
+
+        <h2>Technology Stack</h2>
+        <ul>
+            <li>C++14 for core controller and motion model.</li>
+            <li>ROS Noetic and ROS2 Humble plugins for integration with existing navigation stacks.</li>
+            <li>Eigen and xtensor for efficient matrix and array operations.</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <p>
+            Clone the repository and follow the README instructions to integrate MaPPI into your
+            ROS-based navigation system, or use it standalone for custom experiments.
+        </p>
+
+        <h2>Results</h2>
+        <p>
+            MaPPI generates smooth, feasible paths with real-time obstacle avoidance.
+            Its kinematic support and standalone design make it versatile for embedded platforms
+            and vehicle-like robots, offering a clear advantage over the Nav2 MPPI controller in ROS 1 setups.
+        </p>
+
+        <div class="row" style="margin-top:3rem; gap:2rem; flex-wrap:wrap; display:flex; justify-content:center;">
+            <div class="project-video" style="flex:1 1 100%; max-width:1200px; margin:2rem 0;" data-aos="fade-up">
+                <div style="position:relative; width:100%; padding-bottom:56.25%;">
+                    <iframe src="https://www.youtube.com/embed/OVx9oVUF930" 
+                        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:12px;"
+                        title="MaPPI Navigation Demo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p style="margin-top:0.5rem; font-size:1.2rem; color:white; text-align:center;">
+                    MaPPI navigating through in simulation.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0,50) scale(0.1,-0.1)" fill="#000" stroke="none">
+                    <path d="M133 358 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                    <path d="M133 218 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

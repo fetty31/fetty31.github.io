@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>LieOdyssey — Fetty's Portfolio</title>
+    <meta name="description" content="LieOdyssey: Lightweight, research-friendly toolkit for IMU preintegration and state estimation on Lie groups." />
+    <meta name="author" content="Oriol Martínez">
+
+    <meta property="og:title" content="LieOdyssey — Fetty's Portfolio"/>
+    <meta property="og:description" content="LieOdyssey: Lightweight, research-friendly toolkit for IMU preintegration and state estimation on Lie groups."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://fetty31.github.io/images/preview.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="LieOdyssey — Fetty's Portfolio"/>
+    <meta name="twitter:description" content="LieOdyssey: Lightweight, research-friendly toolkit for IMU preintegration and state estimation on Lie groups."/>
+    <meta name="twitter:image" content="https://fetty31.github.io/images/preview.png"/>
+    <meta name="twitter:image:alt" content="LieOdyssey Project"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <style>
+        .project-hero {
+            padding: 8rem 0 6rem 0;
+            text-align: center;
+            min-height: auto;
+            color: #fff;
+        }
+        .project-hero h1 { font-size: clamp(2.8rem, 4vw, 4.5rem); margin-bottom: 1rem; color: #fff; }
+        .project-hero p { font-size: 1.8rem; max-width: 700px; margin: 0 auto; color: #fff; }
+        .btn--primary { background-color: #007bff; color: #fff; }
+        .project-content { max-width: 900px; margin: 4rem auto; line-height: 1.6; color: #fff; }
+        .project-content h2 { margin-top: 3rem; margin-bottom: 1rem; color: #fff; }
+        .project-content ul { margin-left: 1.5rem; color: #fff; }
+        pre code { background-color: #111; color: #fff; padding: 0.5rem; display: block; border-radius: 4px; overflow-x: auto; }
+        a { color: #00f; }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="spinner" id="spinner"></div>
+    </div>
+
+    <!-- header -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 493 511.69"><path fill-rule="nonzero" d="M6.99 0h314.2v154.84H0V0h6.99zm345.75 356.85H493v154.84H345.75V356.85h6.99zm126.29 13.97H359.72v126.9h119.31v-126.9zM6.99 356.85h314.2v154.84H0V356.85h6.99zm300.23 13.97H13.97v126.9h293.25v-126.9zM133.28 192.39H13.97V319.3h119.31V192.39zM6.99 178.42h140.26v154.85H0V178.42h6.99zm472.04 13.97H185.78V319.3h293.25V192.39zM178.8 178.42H493v154.85H171.82V178.42h6.98zM352.74 0H493v154.84H345.75V0h6.99zm126.29 13.97H359.72v126.9h119.31V13.97zm-171.81 0H13.97v126.9h293.25V13.97z"/></svg>
+            </a>
+        </div>
+
+        <div class="header-content">
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="index.html#projects" title="Portfolio">Portfolio</a></li>
+                    <li><a href="mailto:fetty3113@gmail.com" title="Contact Me">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="doc/cv.pdf" download="Oriol_Martinez_CV.pdf" class="btn btn--stroke btn--small">Download CV</a>
+        </div>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <!-- HERO -->
+    <section class="project-hero">
+        <div class="row">
+            <div class="column large-full">
+                <h1>LieOdyssey</h1>
+                <p>
+                    Lightweight, research-friendly toolkit for IMU preintegration and state estimation on Lie groups.
+                </p>
+                <a href="https://github.com/fetty31/LieOdyssey" target="_blank" class="btn btn--primary" style="margin-top:2rem;">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT CONTENT -->
+    <section class="project-content">
+        <h2>Overview</h2>
+        <p>
+            LieOdyssey provides efficient preintegration routines and filters (observers) on common Lie Groups, enabling robust navigation and state estimation
+            for robotics, drones and autonomous systems. Built on the mathematical foundation of Lie Theory, it simplifies working with IMU data
+            and inertial navigation pipelines.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Preintegration on any Group from Lie++ or ManIf.</li>
+            <li>Lie algebra tools — exponential/logarithm maps, Jacobians, Adjoints.</li>
+            <li>Ready-to-deploy observers for SLAM/INS estimation (ESEKF, InvEKF).</li>
+            <li>Lightweight, modular, easy integration with factor graphs (GTSAM, Ceres).</li>
+        </ul>
+
+        <h2>Technology Stack</h2>
+        <ul>
+            <li>C++ core library.</li>
+            <li>Lie++ or ManIf for Lie group operations.</li>
+            <li>ROS/ROS2 integration supported.</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <p>
+            Clone the repository and build the library as described in the README. Optionally, build tests with CMake or integrate it in a ROS workspace.
+        </p>
+
+        <h2>Background</h2>
+        <p>
+            LieOdyssey leverages Lie group theory for geometric consistency, fast optimization and accurate uncertainty propagation in inertial navigation systems.
+            Preintegration allows summarizing high-rate IMU data into compact measurements, reducing computation and improving filter robustness. 
+            LieOdyssey is my personal playground for building Lie group observers from the ground up — learning, experimenting and having fun with state estimation.
+        </p>
+
+    </section>
+
+    <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M133 358 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                    <path d="M133 218 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -4,21 +4,21 @@ const data = {
             techStack: "C++, ROS/ROS2",
             title: "Fast LIMO",
             githubLink: "https://github.com/fetty31/fast_LIMO",
-            projectLink: "#",
+            projectLink: "fast-limo.html",
             imgLink: "images/portfolio/campus_nord.png"
         },
         {
             techStack: "C++",
             title: "LieOdyssey",
             githubLink: "https://github.com/fetty31/LieOdyssey",
-            projectLink: "#",
+            projectLink: "lieodyssey.html",
             imgLink: "images/portfolio/e8petri.png"
         },
         {
             techStack: "C++, MATLAB, ROS",
             title: "Tailored MPC",
             githubLink: "https://github.com/fetty31/tailored_mpc",
-            projectLink: "#",
+            projectLink: "tailored-mpc.html",
             imgLink: "images/portfolio/tailored_mpc.png"
         },
         {
@@ -39,8 +39,22 @@ const data = {
             techStack: "C++, ROS/ROS2",
             title: "MaPPI",
             githubLink: "https://github.com/fetty31/mappi",
-            projectLink: "#",
+            projectLink: "mappi.html",
             imgLink: "images/portfolio/mappi.png"
+        },
+        {
+            techStack: "C++, ROS/ROS2",
+            title: "Adaptive Cruise Control",
+            githubLink: "https://github.com/fetty31/cruise_control",
+            projectLink: "#",
+            imgLink: "images/portfolio/cruise_control.svg"
+        },
+        {
+            techStack: "MATLAB",
+            title: "RumbX",
+            githubLink: "https://github.com/fetty31/rumbX",
+            projectLink: "#",
+            imgLink: "images/portfolio/rumbx.png"
         }
     ]
 }

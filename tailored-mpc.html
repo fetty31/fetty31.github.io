@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tailored MPC — Fetty's Portfolio</title>
+    <meta name="description" content="Tailored MPC: Non-linear curvature MPC developed for BCN eMotorsport Formula Student team." />
+    <meta name="author" content="Oriol Martínez">
+
+    <meta property="og:title" content="Tailored MPC — Fetty's Portfolio"/>
+    <meta property="og:description" content="Tailored MPC: Non-linear curvature MPC developed for BCN eMotorsport Formula Student team."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://fetty31.github.io/images/preview.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Tailored MPC — Fetty's Portfolio"/>
+    <meta name="twitter:description" content="Tailored MPC: Non-linear curvature MPC developed for BCN eMotorsport Formula Student team."/>
+    <meta name="twitter:image" content="https://fetty31.github.io/images/preview.png"/>
+    <meta name="twitter:image:alt" content="Tailored MPC Project"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        /* Hero section for project pages */
+        .project-hero {
+            padding: 8rem 0 6rem 0; /* more bottom padding for spacing */
+            text-align: center;
+            min-height: auto;
+            color: #fff;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.8rem, 4vw, 4.5rem);
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-hero p {
+            font-size: 1.8rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .btn--primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Project content */
+        .project-content {
+            max-width: 900px;
+            margin: 4rem auto;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .project-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-content ul {
+            margin-left: 1.5rem;
+            color: #fff;
+        }
+
+        pre code {
+            background-color: #111;
+            color: #fff;
+            padding: 0.5rem;
+            display: block;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #00f;
+        }
+    </style>
+</head>
+<body id="top">
+    <!-- preloader -->
+    <div id="preloader"><div class="spinner" id="spinner"></div></div>
+
+    <!-- header -->
+    <header class="s-header">
+        <div class="header-logo"><a href="index.html">
+            <!-- SVG omitted for brevity -->
+        </a></div>
+        <div class="header-content">
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="index.html#projects" title="Portfolio">Portfolio</a></li>
+                    <li><a href="mailto:fetty3113@gmail.com" title="Contact Me">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="doc/cv.pdf" download="Oriol_Martinez_CV.pdf" class="btn btn--stroke btn--small">Download CV</a>
+        </div>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <!-- HERO -->
+    <section class="project-hero">
+        <div class="row">
+            <div class="column large-full">
+                <h1>Tailored MPC</h1>
+                <p>Non-linear curvature MPC developed for BCN eMotorsport Formula Student team. Focused on lateral control for the CAT15x prototype.</p>
+                <a href="https://github.com/fetty31/tailored_mpc" target="_blank" class="btn btn--primary" style="margin-top:2rem;">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT CONTENT -->
+    <section class="project-content">
+        <h2>Overview</h2>
+        <p>
+            Tailored MPC is a non-linear curvature Model Predictive Controller developed for the CAT15x Formula Student car.
+            It implements a high-performance lateral controller that was actively deployed during the 2023 competition season,
+            providing precise steering and optimal vehicle handling on the track.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Curvature-based non-linear MPC for robust lateral control at high speeds.</li>
+            <li>Optimized for real-time execution on embedded vehicle hardware.</li>
+            <li>Fully validated on the CAT15x Formula Student car during competition.</li>
+            <li>Supports fast tuning for different track conditions and vehicle dynamics.</li>
+        </ul>
+
+        <h2>Technology Stack</h2>
+        <ul>
+            <li>C++ for core real-time control algorithms.</li>
+            <li>ROS Noetic for vehicle integration and data streaming.</li>
+            <li>Eigen3 for efficient matrix operations.</li>
+            <li>FORCESPRO solver for NMPC optimization.</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <p>
+            Clone the repository and follow the README instructions to run the controller in simulation or on a Formula Student vehicle.
+        </p>
+
+        <h2>Results</h2>
+        <p>
+            The lateral controller delivers smooth and precise steering, enabling competitive lap times and safe handling on the track.
+            Its real-time performance and reliability were demonstrated during the 2023 Formula Student competition season.
+        </p>
+
+        <div class="project-video" style="flex:1 1 100%; max-width:1200px; margin:2rem 0; text-align:center;" data-aos="fade-up">
+            <div style="position:relative; width:100%; padding-bottom:56.25%;">
+                <iframe src="https://www.youtube.com/embed/mk9U0lRWr-0"
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:12px;"
+                    title="Tailored MPC Track Drive Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p style="margin-top:0.5rem; font-size:1.2rem; color:white;">
+                Tailored MPC lateral controller demo on the CAT15x Formula Student car.
+            </p>
+        </div>
+    </section>
+
+    <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M133 358 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                    <path d="M133 218 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <div style="height: 6rem;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
