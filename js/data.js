@@ -25,14 +25,14 @@ const data = {
             techStack: "C++, IPG CarMaker, ROS",
             title: "FSDriverless",
             githubLink: "https://github.com/fetty31/FSDriverless",
-            projectLink: "#",
+            projectLink: "fsdriverless.html",
             imgLink: "images/portfolio/fsdriverless.png"
         },
         {
             techStack: "C++, ROS",
             title: "Trajectory Optimizer (TRO)",
             githubLink: "https://github.com/fetty31/trajectory_optimizer",
-            projectLink: "#",
+            projectLink: "tro.html",
             imgLink: "images/portfolio/tro_colorplot.png"
         },
         {
@@ -46,14 +46,14 @@ const data = {
             techStack: "C++, ROS/ROS2",
             title: "Adaptive Cruise Control",
             githubLink: "https://github.com/fetty31/cruise_control",
-            projectLink: "#",
+            projectLink: "cruise-control.html",
             imgLink: "images/portfolio/cruise_control.svg"
         },
         {
             techStack: "MATLAB",
             title: "RumbX",
             githubLink: "https://github.com/fetty31/rumbX",
-            projectLink: "#",
+            projectLink: "rumbx.html",
             imgLink: "images/portfolio/rumbx.png"
         }
     ]

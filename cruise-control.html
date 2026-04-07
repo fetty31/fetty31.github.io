@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Cruise Control — Fetty's Portfolio</title>
+    <meta name="description" content="Adaptive Cruise Controller following a GG‑based velocity profile for the BCN eMotorsport Formula Student autonomous vehicle." />
+    <meta name="author" content="Oriol Martínez">
+
+    <meta property="og:title" content="Cruise Control — Fetty's Portfolio"/>
+    <meta property="og:description" content="Adaptive Cruise Controller following a GG‑based velocity profile for the BCN eMotorsport Formula Student autonomous vehicle."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://fetty31.github.io/images/preview.png"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Cruise Control — Fetty's Portfolio"/>
+    <meta name="twitter:description" content="Adaptive Cruise Controller following a GG‑based velocity profile for the BCN eMotorsport Formula Student autonomous vehicle."/>
+    <meta name="twitter:image" content="https://fetty31.github.io/images/preview.png"/>
+    <meta name="twitter:image:alt" content="Cruise Control Project"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        .project-hero {
+            padding: 8rem 0 6rem 0;
+            text-align: center;
+            min-height: auto;
+            color: #fff;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.8rem, 4vw, 4.5rem);
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-hero p {
+            font-size: 1.8rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .btn--primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .project-content {
+            max-width: 900px;
+            margin: 4rem auto;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .project-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project-content ul {
+            margin-left: 1.5rem;
+            color: #fff;
+        }
+
+        pre code {
+            background-color: #111;
+            color: #fff;
+            padding: 0.5rem;
+            display: block;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #00f;
+        }
+    </style>
+
+</head>
+
+<body id="top">
+
+    <!-- header -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 493 511.69"><path fill-rule="nonzero" d="M6.99 0h314.2v154.84H0V0h6.99zm345.75 356.85H493v154.84H345.75V356.85h6.99zm126.29 13.97H359.72v126.9h119.31v-126.9zM6.99 356.85h314.2v154.84H0V356.85h6.99zm300.23 13.97H13.97v126.9h293.25v-126.9zM133.28 192.39H13.97V319.3h119.31V192.39zM6.99 178.42h140.26v154.85H0V178.42h6.99zm472.04 13.97H185.78V319.3h293.25V192.39zM178.8 178.42H493v154.85H171.82V178.42h6.98zM352.74 0H493v154.84H345.75V0h6.99zm126.29 13.97H359.72v126.9h119.31V13.97zm-171.81 0H13.97v126.9h293.25V13.97z"/></svg>
+            </a>
+        </div>
+
+        <div class="header-content">
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="index.html#about" title="About Me">About Me</a></li>
+                    <li><a href="index.html#projects" title="Portfolio">Portfolio</a></li>
+                    <li><a href="mailto:fetty3113@gmail.com" title="Contact Me">Contact Me</a></li>
+                    <li><a href="https://github.com/fetty31" target="_blank" title="Github">Github</a></li>
+                </ul>
+            </nav>
+            <a href="doc/cv.pdf" download="Oriol_Martinez_CV.pdf" class="btn btn--stroke btn--small">Download CV</a>
+        </div>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <!-- HERO -->
+    <section class="project-hero">
+        <div class="row">
+            <div class="column large-full">
+                <h1>Cruise Control</h1>
+                <p>
+                    Adaptive cruise controller following a GG‑based velocity profile for the BCN eMotorsport Formula Student autonomous vehicle.
+                </p>
+                <a href="https://github.com/fetty31/cruise_control" target="_blank" class="btn btn--primary" style="margin-top:2rem;">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT CONTENT -->
+    <section class="project-content">
+        <h2>Overview</h2>
+        <p>
+            This project implements a longitudinal adaptive cruise controller tailored to the 
+            BCN eMotorsport Formula Student autonomous vehicle. It follows a GG‑based desired 
+            velocity profile, regulating the vehicle’s speed to maintain smooth and controlled 
+            longitudinal motion. The controller is integrated within ROS Noetic and is
+            specifically designed for the CAT15x autonomous car. 
+        </p>
+
+        <p>
+        This software was shared as part of my Bachelor’s thesis and was actively deployed during the 2023 competition season, contributing to the vehicle’s performance on the track.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Adaptive cruise controller designed for autonomous racing platforms.</li>
+            <li>Follows a GG‑based velocity profile for smooth acceleration and deceleration.</li>
+            <li>Integrated as part of a ROS‑based autonomous control stack.</li>
+            <li>Modular architecture for longitudinal control tuning.</li>
+        </ul>
+
+        <h2>Technology Stack</h2>
+        <ul>
+            <li>C++ for core controller logic.</li>
+            <li>ROS Noetic for robot integration and communication.</li>
+            <li>Eigen3 for efficient linear algebra computations.</li>
+            <li>ROS messages and custom message packages for control interfacing.</li>
+        </ul>
+
+        <h2>Getting Started</h2>
+        <p>
+            Clone the repository and build it within your ROS Noetic workspace. 
+            Ensure dependencies such as Eigen3 and the associated custom ROS message packages are properly configured 
+            (note: some ROS message packages are proprietary to the BCN eMotorsport team). 
+        </p>
+
+        <h2>Approach</h2>
+        <p>
+            The controller’s architecture is based on established cruise control design principles, using 
+            feedback to track a desired velocity profile while minimizing throttle oscillations and 
+            preserving stability during speed changes. An anti‑windup strategy is included to prevent 
+            integrator build‑up during actuator saturation. 
+        </p>
+
+        <h2>Usage</h2>
+        <p>
+            Once built and sourced, run the cruise control node within your ROS environment as part 
+            of the vehicle’s autonomous systems stack. Adjust velocity profile parameters as required 
+            for your test scenario or track configuration. 
+        </p>
+
+        <h2>Results</h2>
+        <div class="row" style="margin-top: 3rem; gap: 2rem; flex-wrap: wrap; display: flex; justify-content: center;">
+
+            <div style="position:relative; width:100%; padding-bottom:56.25%;">
+                <iframe src="https://www.youtube.com/embed/mk9U0lRWr-0"
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:12px;"
+                    title="Tailored MPC Track Drive Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p style="margin-top:0.5rem; font-size:1.2rem; color:white;">
+                Adaptive Cruise Controller demo on the CAT15x Formula Student car.
+            </p>
+
+            <div data-aos="fade-up" style="width:90%; max-width:1400px; text-align:center;">
+                <img src="images/cruise_control/pid_diagram.svg" alt="CruiseControlDiagram"
+                    style="width:100%; height:auto; border-radius:12px; box-shadow: 0 6px 24px rgba(0,0,0,0.6);">
+                <p style="margin-top:0.5rem; font-size:1.2rem; color:white;">Adaptive Cruise Control Diagram</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div style="height: 6rem;"></div>
+
+    <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50.000000pt" height="50.000000pt" viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M133 358 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                    <path d="M133 218 l-113 -51 0 -39 c0 -47 -4 -47 136 18 l94 43 110 -49 c60 -28 112 -50 115 -50 3 0 5 17 5 39 l0 38 -114 52 c-62 28 -115 51 -117 50 -2 0 -55 -23 -116 -51z"/>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
