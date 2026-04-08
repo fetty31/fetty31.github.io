@@ -47,7 +47,7 @@ const data = {
             title: "Adaptive Cruise Control",
             githubLink: "https://github.com/fetty31/cruise_control",
             projectLink: "cruise-control.html",
-            imgLink: "images/portfolio/cruise_control.svg"
+            imgLink: "images/portfolio/cruise_control.png"
         },
         {
             techStack: "MATLAB",
