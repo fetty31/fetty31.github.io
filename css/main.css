@@ -1960,8 +1960,8 @@ html.no-csstransitions .hero-content {
  }
  
 .s-portfolio {
-  padding-top: 2rem;
-  padding-bottom: 24rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2477,7 +2477,7 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
  .s-about {
   padding-top: 24rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -2507,8 +2507,8 @@ html.no-csstransitions .hero-content {
 }
 
 .s-about__content {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
   position: relative;
 }
