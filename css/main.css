@@ -564,6 +564,25 @@ form,
   overflow: hidden;
 }
 
+.preloader-content {
+    text-align: center;
+}
+
+.preloader-title {
+    margin-top: 120px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.preloader-text {
+    margin-top: 10px;
+    color: rgba(255,255,255,.7);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
 .no-js #preloader,
 .oldie #preloader {
   display: none;
@@ -581,7 +600,7 @@ form,
   transform-origin: 50%;
   perspective-origin: 50% 50%;
   background-size: 10em 10em;
-  background-image: url(/ingolfur/images/preloader.svg);
+  background-image: url(https://fetty31.github.io/images/preloader.svg);
   width: 10em;
   height: 10em;
   margin-top: -5em;
